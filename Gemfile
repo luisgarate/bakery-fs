@@ -32,7 +32,7 @@ gem 'jbuilder'
 gem 'redis', '~> 3.0'
 
 gem 'sidekiq'
-
+gem 'activerecord-import'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
