@@ -2,8 +2,8 @@
 
 .cookie-info
   Cookie in oven:
-  - if @oven.cookie
-    1 cookie with #{@oven.cookie.fillings.blank? ? "no fillings" : @oven.cookie.fillings }
+  - if @oven.cookies.any?
+    #{@oven.cookies.size} cookie/s with #{@oven.cookie.fillings.blank? ? "no fillings" : @oven.cookie.fillings }
     #cookie-status
       = render 'cookie_status', cookie: @oven.cookie
   - else
